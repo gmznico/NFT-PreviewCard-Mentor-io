@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/*----- Variables -----*/
+:root{
+    /*Primary*/
+
+    --SoftBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /*Neutral*/
+
+    --MainDarkBlue: hsl(217, 54%, 11%);
+    --CardDarkBlue: hsl(216, 50%, 16%);
+    --LineDarkBlue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+
+/*----- Globals -----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+
+/*-----  Mobile: 375px -----*/
+
+body{
+    background-color: var(--MainDarkBlue);
+}
+
+/*----- Container -----*/
+.container{
+    width: 33rem;
+    height: 55rem;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--CardDarkBlue);
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto 0.5rem;
+    border-radius: 1.5rem;
+}
+
+
+/*----- Section1 -----*/
+
+.section1 .img {
+    width: 28rem;
+    height: 28rem;
+    margin: 2.5rem;
+    border-radius: 1.5rem;
+    background-image: url("images/image-equilibrium.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.img__shadow{
+    width: 28rem;
+    height: 28rem;
+    border-radius: 1.5rem;
+}
+
+.img__shadow:hover{
+    width: 28rem;
+    height: 28rem;
+    border-radius: 1.5rem;
+    background-color: rgba(0, 255, 247, 0.6);
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/*----- Section2 -----*/
+
+.section2{
+    width: 85%;
+    height: 20rem;
+    margin: 0 auto;
+    padding-left: 0.4rem;
+}
+
+.equilibrium__title{
+    font-size: 2.3rem;
+    color: var(--White);
+    font-weight: 600;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+.equilibrium__title:hover{
+    color: var(--Cyan);
+}
+
+.equilibrium__paragraph{
+    font-size: 1.63rem;
+    color: var(--SoftBlue);
+    font-weight: 300;
+    line-height: 2.5rem;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+    
+}
+
+.ethereum{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--Cyan);
+    display: flex;
+    align-items: center;
+}
+
+.ethereum img{
+    padding-right: 0.5rem;
+}
+
+.clock{
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--SoftBlue);
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+.clock img{
+    padding-right: 0.5rem;
+}
+
+/*----- Line -----*/
+
+.line{
+    color: var(--LineDarkBlue);
+    margin: 1.3rem auto;
+    width: 97%;
+}
+
+/*----- Creation -----*/
+
+.creation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.creation h2{
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 0 1.5rem;
+    color: var(--SoftBlue);
+}
+
+.creation h2 span{
+    font-size: 1.6rem;
+    color: var(--White);
+    cursor: pointer;
+}
+
+.creation h2 span:hover{
+    color: var(--Cyan);
+}
+
+
+.avatar{
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    height: 100%;
+    width: 14%;
+}
+
+
+/*----- Footer -----*/
+
+.footer { font-size: 1.3rem; text-align: center; color: white; margin:3rem;}
+.footer a { font-size: 1.3rem; color: hsl(228, 45%, 44%);}
+
+
+
+
+/*-----  Mobile: 900px -----*/
+
+@media screen and (min-width: 900px)  {
+    .container{
+        margin: 14rem auto 0.5rem;
+        width: 75rem;
+        height: auto;
+        flex-direction: row;
+    }
+
+    /*----- Section2 -----*/
+    .section2{
+        margin: auto 0;
+        padding-right: 0.4rem;
+    }
+
+    .equilibrium__title{
+        font-size: 3.3rem;
+    }
+
+    .equilibrium__paragraph{
+        font-size: 2.3rem;
+    }
+
+    .ethereum, .clock{
+        font-size: 2rem;
+
+    }
+
+    /*----- Creation -----*/
+
+    .creation{
+        justify-content: center;
+    }
+
+    .creation h2, .creation h2 span{
+        font-size: 2.6rem;
+    }
+    
+    /*----- Footer -----*/
+
+    .footer, .footer a { font-size: 1.8rem;}
+
+}
+
+
+
+
+
+
+
